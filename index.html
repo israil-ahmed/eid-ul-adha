@@ -177,6 +177,17 @@
         @keyframes expandWidth {
             to { width: 100%; }
         }
+        .ad-container {
+            margin-top: 30px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
     </style>
 </head>
 <body>
@@ -188,6 +199,20 @@
         </div>
         <div id="greetingText" class="greeting">ईद उल अज़हा मुबारक</div>
         <button onclick="shareOnWhatsApp()"><i class="fab fa-whatsapp"></i> Share on WhatsApp</button>
+    </div>
+
+    <!-- Advertisement Section -->
+    <div class="ad-container">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '15d07732aeac90899a8b4137d6086fb8',
+                'format' : 'iframe',
+                'height' : 60,
+                'width' : 468,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/15d07732aeac90899a8b4137d6086fb8/invoke.js"></script>
     </div>
 
     <script>
