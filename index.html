@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid ul Adha Greetings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);
+            min-height: 100vh;
+            animation: fadeInUp 1s ease-out;
+            color: #333;
+        }
+        .container {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-out 0.3s backwards;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .greeting {
+            font-size: 32px;
+            margin: 25px 0;
+            background: linear-gradient(45deg, #1a2a6c, #b21f1f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: slideIn 1s ease-out;
+            line-height: 1.5;
+        }
+        .eid-image {
+            max-width: 100%;
+            margin: 0 0 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            animation: floating 3s ease-in-out infinite;
+            transition: transform 0.3s ease;
+        }
+        .eid-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .input-container {
+            margin: 20px 0;
+            animation: fadeInUp 1s ease-out 0.6s backwards;
+        }
+        input {
+            padding: 12px 20px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: 2px solid rgba(26, 42, 108, 0.2);
+            border-radius: 10px;
+            width: 250px;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        input:focus {
+            outline: none;
+            border-color: #1a2a6c;
+            box-shadow: 0 0 20px rgba(26, 42, 108, 0.2);
+            transform: scale(1.02);
+            background: white;
+        }
+        button {
+            background: linear-gradient(45deg, #1a2a6c, #b21f1f);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(26, 42, 108, 0.2);
+        }
+        button:hover {
+            background: linear-gradient(45deg, #b21f1f, #1a2a6c);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 42, 108, 0.3);
+        }
+        button i {
+            font-size: 20px;
+            filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+        }
+        h1 {
+            color: #fdbb2d;
+            font-size: 40px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            animation: fadeInUp 1s ease-out 0.3s backwards;
+            position: relative;
+            display: inline-block;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #fdbb2d, #ff9a44);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 10px 20px;
+            border-radius: 10px;
+            letter-spacing: 1px;
+        }
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #fdbb2d, #ff9a44);
+            animation: expandWidth 1s ease-out 1s forwards;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            border-radius: 2px;
+        }
+        h1::before {
+            content: '🌙';
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 32px;
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes expandWidth {
+            to { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Eid ul Adha Greetings</h1>
+        <img src="eid.gif" alt="Eid Mubarak" class="eid-image">
+        <div class="input-container">
+            <input type="text" id="nameInput" placeholder="अपना नाम लिखो" onkeyup="updateGreeting()">
+        </div>
+        <div id="greetingText" class="greeting">ईद उल अज़हा मुबारक</div>
+        <button onclick="shareOnWhatsApp()"><i class="fab fa-whatsapp"></i> Share on WhatsApp</button>
+    </div>
+
+    <script>
+        function updateGreeting() {
+            const name = document.getElementById('nameInput').value;
+            const greetingText = document.getElementById('greetingText');
+            if (name.trim() !== '') {
+                greetingText.textContent = `ईद उल अज़हा मुबारक ${name} की तरफ से`;
+                greetingText.style.animation = 'slideIn 0.5s ease-out';
+            } else {
+                greetingText.textContent = 'ईद उल अज़हा मुबारक';
+                greetingText.style.animation = 'slideIn 0.5s ease-out';
+            }
+        }
+
+        function shareOnWhatsApp() {
+            const name = document.getElementById('nameInput').value;
+            const greeting = name.trim() !== '' 
+                ? `ईद उल अज़हा मुबारक ${name} की तरफ से`
+                : 'ईद उल अज़हा मुबारक';
+            const shareUrl = window.location.href;
+            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(greeting + '\n' + shareUrl)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html> 
